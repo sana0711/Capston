@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400;1,700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  background: #00adb5;
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo {
+  align-items: flex-end;
+  margin-right: 100px;
+}
+.navbar .logo a {
+  color: #ffff;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+  align-items: flex-end;
+  margin-right: 290px;
+}
+.navbar .logo a span {
+  color: #00587a;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-left: 50px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar .menu li a:hover {
+  color: #008891;
+}
+.banner {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: beige;
+}
+.home {
+  display: flex;
+  background: url("images/bannerr.jpg") no-repeat center;
+  height: 100vh;
+
+  min-height: 500px;
+  font-family: "Ubuntu", "sans-serif";
+}
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 {
+  font-size: 27px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span {
+  color: #00adb5;
+  font-weight: 600;
+}
+#app-banner {
+  background: #086e7d;
+  padding: 55px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#app-banner .p-1 {
+  flex: 2;
+}
+.h3 mb-3 fw-normal {
+  color: #efefef;
+}
+#app-banner .d-flex {
+  flex: 1;
+  padding: 1rem;
+}
+#app-banner h1 {
+  margin-top: 23px;
+  color: #efefef;
+  margin-left: 25px;
+}
+#app-banner p {
+  margin-top: 23px;
+  color: #efefef;
+  margin-left: 25px;
+}
+#app-banner img {
+  width: 150px;
+  margin: 60px 0;
+}
+#footer {
+  background-color: #efefef;
+  padding: 20px 10px 8px;
+}

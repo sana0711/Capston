@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  background: #00adb5;
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo {
+  align-items: flex-end;
+  margin-right: 100px;
+}
+.navbar .logo a {
+  color: #ffff;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+  align-items: flex-end;
+  margin-right: 290px;
+}
+.navbar .logo a span {
+  color: #00587a;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-left: 50px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar .menu li a:hover {
+  color: #008891;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+}
+.box{
+    margin-top:90px;
+}
+</style>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo "><a href="#"> Kisan<span>Mitra </span>&nbsp;&nbsp;&nbsp; </a></div>
+            <ul class="menu">
+
+                <li class="mt-2"><a href="./home.html"> Home</a></li>
+                <li><a href="./about.html">  About</a></li>
+                <li><a href="./home.html">  Service </a></li>
+               
+                <li><a href="./contact.html"> Contact </a></li>
+               
+            </ul>
+        </div>
+    </nav>
+    <div class="container ">
+        <div class="box">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+    </div>
+      </div>
+</body>
+</html>
